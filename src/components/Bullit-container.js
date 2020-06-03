@@ -1,6 +1,9 @@
 /** @jsx jsx */
 import { jsx, css, } from '@emotion/core';
 import BullitBox from './Bullit-box';
+import BullitParcel from './Bullit-parcel';
+import BullitQC from './Bullit-qc';
+import BullitCustomer from './Bullit-customer';
 
 const BullitContainer = () => {
     return(
@@ -12,9 +15,9 @@ const BullitContainer = () => {
                 justify-content: space-between;
             }`}>
             <BullitBox />
-            <BullitBox />
-            <BullitBox />
-            <BullitBox />
+            <BullitParcel />
+            <BullitQC />
+            <BullitCustomer />
         </section>
     )
 }

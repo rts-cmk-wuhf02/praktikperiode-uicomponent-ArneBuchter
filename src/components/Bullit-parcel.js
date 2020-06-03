@@ -1,6 +1,6 @@
 /** @jsx jsx */
 import { jsx, css, } from '@emotion/core';
-import OnTime from './OnTime.png';
+import Parcel from './Parcels.png';
 
 let space = 'b4c1xbfc4w8w';
 let deleveryToken = 'ejLF6V-_6hmTXDlZwiyRXoe-zOcQWGqmZX25z7FkPZY';
@@ -13,10 +13,10 @@ fetch(`https://cdn.contentful.com/spaces/${space}/environments/master/entries?ac
         console.log(data)
     })
     
-const BullitBox = () => {
+const BullitParcel = () => {
     return(
         <div css={css`{
-            background-color: #005AEE;
+            background-color: #FFA767;
             text-align: left;
             padding: 0 10px;
             width: 40vmin;
@@ -30,17 +30,17 @@ const BullitBox = () => {
             <img css={css`{
                 width: 80px;
                 height: 80px;
-                justify-self: end;
                 margin: 1rem;
+                justify-self: end;
                 z-index: 10;
-            }`} src={OnTime} alt="" />
+            }`} src={Parcel} alt="" />
             <h2 css={css`{
                 margin: 0;
                 font-size: 1rem;
-            }`}>ON-TIME-DELEVERY</h2>
+            }`}>PARCELS</h2>
             <p css={css`{}`}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea enim obcaecati corrupti.</p>
         </div>
     )
 }
 
-export default BullitBox;
+export default BullitParcel;
